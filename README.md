@@ -216,3 +216,114 @@ Let me know if you'd like help organizing the code files for each concept into f
 s1 = Student()
 s1.set_name("Suraj")
 print(s1.get_name())
+
+
+✅ Walrus Operator (:=)
+
+✅ *args
+
+✅ **kwargs
+
+markdown
+Copy
+Edit
+# 🐍 Python Special Features: Walrus Operator, *args, **kwargs
+
+This repo contains simple and beginner-friendly Python programs that demonstrate:
+- The 🦦 **Walrus Operator (`:=`)**
+- The 🧸 `*args` (arbitrary arguments)
+- The 🍬 `**kwargs` (keyword arguments)
+
+All examples are explained in a way even school kids can understand! 🎓
+
+---
+
+## 🦦 1. Walrus Operator (`:=`)
+
+### ✅ What it does:
+Assigns a value and uses it at the same time (saves one line).
+
+### 📄 Example 1:
+```python
+# Normal way
+name = input("What's your name? ")
+print("Hello", name)
+python
+Copy
+Edit
+# Walrus way
+print("Hello", name := input("What's your name? "))
+📄 Example 2:
+python
+Copy
+Edit
+if (n := 10) > 5:
+    print("The number is big:", n)
+🧺 2. *args – Many Unnamed Arguments
+✅ What it does:
+Allows you to pass many values to a function (like a bag of toys 🧸)
+
+📄 Example 1:
+python
+Copy
+Edit
+def show_toys(*args):
+    for toy in args:
+        print("Toy:", toy)
+
+show_toys("car", "doll", "ball")
+📄 Example 2:
+python
+Copy
+Edit
+def add_numbers(*args):
+    total = sum(args)
+    print("Total is:", total)
+
+add_numbers(1, 2, 3, 4)
+🍭 3. **kwargs – Many Named Arguments
+✅ What it does:
+Lets you send values with names, like a dictionary (like labeled snacks 🍪)
+
+📄 Example 1:
+python
+Copy
+Edit
+def show_snacks(**kwargs):
+    for item, quantity in kwargs.items():
+        print(f"{quantity} x {item}")
+
+show_snacks(cookie=2, juice=1, candy=3)
+📄 Example 2:
+python
+Copy
+Edit
+def print_student_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_student_info(name="Suraj", age=20, grade="A")
+🛠 How to Run
+Copy and paste each example into a .py file.
+
+Use any Python IDE (like VS Code or Thonny).
+
+Run and play with the inputs to learn better.
+
+🧠 Summary Table
+Feature	Symbol	Use Case
+Walrus Operator	:=	Assign + Use in same line
+*args	*	Pass many unnamed values
+**kwargs	**	Pass many named key=value values
+
+🙌 Made by Suraj Singh
+📘 Connect with me on LinkedIn
+🌟 If you like it, please star ⭐ the repo and share it with friends!
+
+yaml
+Copy
+Edit
+
+---
+
+You can paste this into your `README.md` on GitHub. Want help creating a nice folder 
